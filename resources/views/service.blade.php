@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
             <a class="navbar-brand" href="">
@@ -27,13 +26,12 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page"
-                            href="{{ Route('home') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('service') }}">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('testimonial') }}">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('fac') }}">faq</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('portfolio') }}">portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('contact') }}">contact</a>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
                     </li>
                 </ul>
                 <button type="button" class="rounded-pill btn-rounded">
@@ -46,90 +44,106 @@
         </div>
     </nav>
 
-
-    <section id="home" class="intro-section">
+    <section id="services" class="services">
         <div class="container">
-            <div class="row align-items-center text-white">
-                <!-- START THE CONTENT FOR THE INTRO  -->
-                <div class="col-md-6 intros text-start">
-                    <h1 class="display-2">
-                        <span class="display-2--intro">Hey!, I'm Patrick</span>
-                        <span class="display-2--description lh-base">
-                            this is a multi-purpose responsive layout created with bootstrap v5.
-                            (here your can place your description text)
-                        </span>
-                    </h1>
-                    <button type="button" class="rounded-pill btn-rounded">Get in Touch
-                        <span><i class="fas fa-arrow-right"></i></span>
-                    </button>
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold">Our Services</h1>
+                <div class="heading-line mb-1"></div>
+            </div>
+            <!-- START THE DESCRIPTION CONTENT  -->
+            <div class="row pt-2 pb-2 mt-0 mb-3">
+                <div class="col-md-6 border-right">
+                    <div class="bg-white p-3">
+                        <h2 class="fw-bold text-capitalize text-center">
+                            Our Services Range From Initial Design To Deployment Anywhere Anytime
+                        </h2>
+                    </div>
                 </div>
-                <!-- START THE CONTENT FOR THE VIDEO -->
-                <div class="col-md-6 intros text-end">
-                    <div class="video-box">
-                        <img src="/themeFiles/images/arts/intro-section-illustration.png" alt="video illutration"
+                <div class="col-md-6">
+                    <div class="bg-white p-4 text-start">
+                        <p class="fw-light">
+                            Lorem ipsum dolor sit amet consectetur architecto magni,
+                            dicta maxime laborum temporibus dolorem esse doloremque illo quas nisi enim molestias.
+                            Tempore ducimus molestiae in dolore enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE CONTENT FOR THE SERVICES  -->
+        <div class="container">
+            <!-- START THE MARKETING CONTENT  -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                    <div class="services__content">
+                        <div class="icon d-block fas fa-paper-plane"></div>
+                        <h3 class="display-3--title mt-1">Marketing</h3>
+                        <p class="lh-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
+                            doloremque autem quibusdam blanditiis harum alias hic accusantium
+                            maxime atque ratione magni repellat?
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+                    <div class="services__pic">
+                        <img src="/themeFiles/images/services/service-1.png" alt="marketing illustration"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <!-- START THE WEB DEVELOPMENT CONTENT  -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+                    <div class="services__pic">
+                        <img src="/themeFiles/images/services/service-2.png" alt="web development illustration"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                    <div class="services__content">
+                        <div class="icon d-block fas fa-code"></div>
+                        <h3 class="display-3--title mt-1">web development</h3>
+                        <p class="lh-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
+                            doloremque autem quibusdam blanditiis harum alias hic accusantium
+                            maxime atque ratione magni repellat?
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- START THE CLOUD HOSTING CONTENT  -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                    <div class="services__content">
+                        <div class="icon d-block fas fa-cloud-upload-alt"></div>
+                        <h3 class="display-3--title mt-1">cloud hosting</h3>
+                        <p class="lh-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
+                            doloremque autem quibusdam blanditiis harum alias hic accusantium
+                            maxime atque ratione magni repellat?
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+                    <div class="services__pic">
+                        <img src="/themeFiles/images/services/service-3.png" alt="cloud hosting illustration"
                             class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
     </section>
-
-
-    <section id="campanies" class="campanies">
-        <div class="container">
-            <div class="row text-center">
-                <h4 class="fw-bold lead mb-3">Trusted by campanies like</h4>
-                <div class="heading-line mb-5"></div>
-            </div>
-        </div>
-        <!-- START THE CAMPANIES CONTENT  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-1.png" alt="Campany 1 logo"
-                            title="Campany 1 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-2.png" alt="Campany 2 logo"
-                            title="Campany 2 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-3.png" alt="Campany 3 logo"
-                            title="Campany 3 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-4.png" alt="Campany 4 logo"
-                            title="Campany 4 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-5.png" alt="Campany 5 logo"
-                            title="Campany 5 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-6.png" alt="Campany 6 logo"
-                            title="Campany 6 Logo" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <footer class="footer">
         <div class="container">

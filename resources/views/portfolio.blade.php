@@ -27,13 +27,12 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page"
-                            href="{{ Route('home') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('service') }}">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('testimonial') }}">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('fac') }}">faq</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('portfolio') }}">portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('contact') }}">contact</a>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
                     </li>
                 </ul>
                 <button type="button" class="rounded-pill btn-rounded">
@@ -46,90 +45,138 @@
         </div>
     </nav>
 
-
-    <section id="home" class="intro-section">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="row align-items-center text-white">
-                <!-- START THE CONTENT FOR THE INTRO  -->
-                <div class="col-md-6 intros text-start">
-                    <h1 class="display-2">
-                        <span class="display-2--intro">Hey!, I'm Patrick</span>
-                        <span class="display-2--description lh-base">
-                            this is a multi-purpose responsive layout created with bootstrap v5.
-                            (here your can place your description text)
-                        </span>
-                    </h1>
-                    <button type="button" class="rounded-pill btn-rounded">Get in Touch
-                        <span><i class="fas fa-arrow-right"></i></span>
-                    </button>
-                </div>
-                <!-- START THE CONTENT FOR THE VIDEO -->
-                <div class="col-md-6 intros text-end">
-                    <div class="video-box">
-                        <img src="/themeFiles/images/arts/intro-section-illustration.png" alt="video illutration"
-                            class="img-fluid">
-                    </div>
+            <div class="row text-center mt-5">
+                <h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
+                <div class="heading-line"></div>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro temporibus distinctio.
+                </p>
+            </div>
+            <!-- FILTER BUTTONS  -->
+            <div class="row mt-5 mb-4 g-3 text-center">
+                <div class="col-md-12">
+                    <button class="btn btn-outline-primary" type="button">All</button>
+                    <button class="btn btn-outline-primary" type="button">websites</button>
+                    <button class="btn btn-outline-primary" type="button">design</button>
+                    <button class="btn btn-outline-primary" type="button">mockup</button>
                 </div>
             </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
-    </section>
 
-
-    <section id="campanies" class="campanies">
-        <div class="container">
-            <div class="row text-center">
-                <h4 class="fw-bold lead mb-3">Trusted by campanies like</h4>
-                <div class="heading-line mb-5"></div>
-            </div>
-        </div>
-        <!-- START THE CAMPANIES CONTENT  -->
-        <div class="container">
+            <!-- START THE PORTFOLIO ITEMS  -->
             <div class="row">
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-1.png" alt="Campany 1 logo"
-                            title="Campany 1 Logo" class="img-fluid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-1.jpg" alt="portfolio 1 image"
+                            title="portfolio 1 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 1</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-2.png" alt="Campany 2 logo"
-                            title="Campany 2 Logo" class="img-fluid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-2.jpg" alt="portfolio 2 image"
+                            title="portfolio 2 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 2</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-3.png" alt="Campany 3 logo"
-                            title="Campany 3 Logo" class="img-fluid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-3.jpg" alt="portfolio 3 image"
+                            title="portfolio 3 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 3</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-4.png" alt="Campany 4 logo"
-                            title="Campany 4 Logo" class="img-fluid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-4.jpg" alt="portfolio 4 image"
+                            title="portfolio 4 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 4</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-5.png" alt="Campany 5 logo"
-                            title="Campany 5 Logo" class="img-fluid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-5.jpg" alt="portfolio 5 image"
+                            title="portfolio 5 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 5</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-6.png" alt="Campany 6 logo"
-                            title="Campany 6 Logo" class="img-fluid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-6.jpg" alt="portfolio 6 image"
+                            title="portfolio 6 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 6</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-7.jpg" alt="portfolio 7 image"
+                            title="portfolio 7 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 7</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-8.jpg" alt="portfolio 8 image"
+                            title="portfolio 8 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 8</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box shadow">
+                        <img src="/themeFiles/images/portfolio/portfolio-9.jpg" alt="portfolio 9 image"
+                            title="portfolio 9 picture" class="img-fluid">
+                        <div class="portfolio-info">
+                            <div class="caption">
+                                <h4>project name goes here 9</h4>
+                                <p>category project</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="container">

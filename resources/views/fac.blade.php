@@ -27,13 +27,12 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page"
-                            href="{{ Route('home') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('service') }}">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('testimonial') }}">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('fac') }}">faq</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('portfolio') }}">portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ Route('contact') }}">contact</a>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
                     </li>
                 </ul>
                 <button type="button" class="rounded-pill btn-rounded">
@@ -46,90 +45,104 @@
         </div>
     </nav>
 
-
-    <section id="home" class="intro-section">
-        <div class="container">
-            <div class="row align-items-center text-white">
-                <!-- START THE CONTENT FOR THE INTRO  -->
-                <div class="col-md-6 intros text-start">
-                    <h1 class="display-2">
-                        <span class="display-2--intro">Hey!, I'm Patrick</span>
-                        <span class="display-2--description lh-base">
-                            this is a multi-purpose responsive layout created with bootstrap v5.
-                            (here your can place your description text)
-                        </span>
-                    </h1>
-                    <button type="button" class="rounded-pill btn-rounded">Get in Touch
-                        <span><i class="fas fa-arrow-right"></i></span>
-                    </button>
-                </div>
-                <!-- START THE CONTENT FOR THE VIDEO -->
-                <div class="col-md-6 intros text-end">
-                    <div class="video-box">
-                        <img src="/themeFiles/images/arts/intro-section-illustration.png" alt="video illutration"
-                            class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
-    </section>
-
-
-    <section id="campanies" class="campanies">
+    <section id="faq" class="faq">
         <div class="container">
             <div class="row text-center">
-                <h4 class="fw-bold lead mb-3">Trusted by campanies like</h4>
-                <div class="heading-line mb-5"></div>
+                <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+                <div class="heading-line"></div>
+                <p class="lead">frequently asked questions, get knowledge befere hand</p>
             </div>
-        </div>
-        <!-- START THE CAMPANIES CONTENT  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-1.png" alt="Campany 1 logo"
-                            title="Campany 1 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-2.png" alt="Campany 2 logo"
-                            title="Campany 2 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-3.png" alt="Campany 3 logo"
-                            title="Campany 3 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-4.png" alt="Campany 4 logo"
-                            title="Campany 4 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-5.png" alt="Campany 5 logo"
-                            title="Campany 5 Logo" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="campanies__logo-box shadow-sm">
-                        <img src="/themeFiles/images/campanies/campany-6.png" alt="Campany 6 logo"
-                            title="Campany 6 Logo" class="img-fluid">
+            <!-- ACCORDION CONTENT  -->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="accordion" id="accordionExample">
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What are the main features?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    do i have to pay again after trial
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    How can I get started after trial?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION ITEM 4 -->
+                        <div class="accordion-item shadow mb-3">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Can I be refunded if am not satisfied?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="container">
